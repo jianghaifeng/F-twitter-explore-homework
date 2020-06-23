@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: $container-padding-y $container-padding-x;
+
+  nav {
+    > ul {
+      display: flex;
+      > li {
+        margin-right: 20px;
+        @include btn($primary-color, $body-bg, $primary-color);
+        &:last-child {
+          margin-right: 0px;
+          @include btn($white, $primary-color, $body-bg);
+        }
+      }
+    }
+  }
+}
