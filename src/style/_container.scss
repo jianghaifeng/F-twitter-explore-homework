@@ -1,3 +1,51 @@
 .container {
   align-content: center;
+  margin: auto;
+  width: 400px;
+  border-radius: $border-radius-base;
+  border: solid 1px;
+  border-color: $border-color;
+  margin-top: 80px;
+
+  input,
+  label,
+  button,
+  a {
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+  }
+
+  input,
+  button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    border-radius: 80px;
+    background-color: $body-bg;
+    @include btn($primary-color, $body-bg, $primary-color);
+    &:last-child {
+      @include btn($white, $primary-color, $body-bg);
+    }
+  }
+
+  input {
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid $gray;
+  }
+
+  .otherlabel {
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    color: $white;
+    display: flex;
+    justify-content: center;
+  }
 }
