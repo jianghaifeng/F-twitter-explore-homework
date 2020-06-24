@@ -1,5 +1,7 @@
 .container {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: auto;
   width: 400px;
   border-radius: $border-radius-base;
@@ -52,7 +54,6 @@
 
   h2 {
     color: $white;
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
 }
